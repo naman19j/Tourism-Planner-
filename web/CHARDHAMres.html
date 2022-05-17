@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid white;
+  perspective: 1000px;
+  display: inline-table; 
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: orange;
+  color: white;
+  transform: rotateY(180deg);
+}
+.button {
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 1px;
+      cursor: pointer;
+    }
+    .button {background-color: rgba(0, 0, 0, 0.596)} 
+</style>
+</head>
+<body style="background-image: url(projectback.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Times New Roman';
+background-attachment: fixed; text-align:center;align-content: center; align-items: center;">
+
+<h1 style="color: #f1f1f1; background-color: black;">Restaurants</h1>
+<h3>Nearby CharDham Temples</h3><br><br>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipM8MZreRlyzizfIL6auMpJuLEVDyy6EGyXuo8pt=w408-h306-k-no" style="width:300px;height:200px;"/>
+        <h2 style="color:#f1f1f1; background-color: black;">Mishra <br>Restaurant</h2>
+    </div>
+    <div class="flip-box-back">
+        <br><br>
+      <h4 style="color: black;">Near, Badrinath Dham, Chamoli - 246424, Paramarth Lok Road, Badrinath, 246422</h4>
+      <form action="CHARDHAMfood1.html">
+          <button type="submit" class="button">Order : </button>
+      </form>
+    </div>
+  </div>
+</div>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipOEBN7MuH1YcnHh5tzJ9uT17d0mzTi69vte2yMX=w408-h306-k-no"style="width:300px;height:200px;"/>
+          <h2 style="color:#f1f1f1; background-color: black;">Shree Balaji Rajasthani Restaurant</h2>
+      </div>
+      <div class="flip-box-back">
+          <br><br>
+        <h4 style="color: black;">Ganga Mandir Marg, Gangotri, 239135Uttarakhand, Gangotri, 249135</h4>
+        <form action="CHARDHAMfood2.html">
+            <button type="submit" class="button">Order : </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+<div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipN54cShmeRsQ1Vx8J8Alf2y_eac5-dMUMFqGQnw=w408-h544-k-no" style="width:300px;height:200px;"/>
+          <h2 style="color:#f1f1f1; background-color: black;">Tiwari Hotel & <br>Restaurant</h2>
+      </div>
+      <div class="flip-box-back">
+          <br><br>
+        <h4 style="color: black;">P3M8+PMM, Kedarnath, Uttarakhand 246445</h4>
+        <form action="CHARDHAMfood3.html">
+            <button type="submit" class="button">Order : </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipNDaYLM3jg8h5S8QipWcNPcFrUDoPBG8Chha3x-=w408-h306-k-no"style="width:300px;height:200px;"/>
+            <h2 style="color:#f1f1f1; background-color: black;">Vankatesh<br> Restaurant</h2>
+        </div>
+        <div class="flip-box-back">
+            <br><br>
+          <h4 style="color: black;">Badrinath, Uttarakhand 246422</h4>
+          <form action="CHARDHAMfood4.html">
+              <button type="submit" class="button">Order : </button>
+          </form>
+        </div>
+      </div>
+    </div>
+<br><br>
+</body>
+</html>

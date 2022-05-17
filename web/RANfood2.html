@@ -1,0 +1,174 @@
+<html>
+    <style>
+        footer {
+  text-align: left;
+  padding: 2px;
+  background-color: lightgreen;
+  color: black;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+   .button {
+  border-radius: 4px;
+  background-color: lightgreen;
+  border: none;
+  color: darkblue;
+  text-align: center;
+  font-size: 20px;
+  padding: 13px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+label{
+    color:lightsalmon
+}
+h4{
+    text-align: center;
+}
+     </style>
+<body style="background-image: url(https://images.unsplash.com/photo-1458253756247-1e4ed949191b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGFyayUyMGZvb2QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;">
+    <div class="topnav">
+        <a class="active" href="RANres.html">Go Back</a>
+      </div>
+    <h1 style="text-align:center;background-color: springgreen">The Food Court</h1>
+    <h2 style="text-align:center; color: lightyellow">What would you like to order?</h2>
+    <br>
+    <h2 style="color:lightpink;text-align: center"><u>AUTHENTIC DISHES</u></h2><br>
+    <form style="text-align:center" action="RANfood2" method="post">
+            <label for="sn1"><b>Jaipuri Paneer + Roti: </b></label>
+            <select name="sn1" id="sn1">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <label style="color:lightyellow">&nbsp;&nbsp;(Rs. 199/- per plate)&nbsp;  &nbsp;</label>
+                <br><br>
+            <label for="sn2"><b>Dal + Bati + Churma: </b></label>
+            <select name="sn2" id="sn2">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <label style="color:lightyellow"> &nbsp;&nbsp; (Rs. 195/- per plate) &nbsp;&nbsp; </label>
+            <br><br>
+            <label for="sn3"><b>Rajma + Chawal: </b></label>
+            <select name="sn3" id="sn3">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <label style="color:lightyellow"> &nbsp;&nbsp; (Rs. 169/- per plate) &nbsp;&nbsp; </label>
+            <br><br>
+            <label for="sn4"><b>Butter Naan: </b></label>
+            <select name="sn4" id="sn4">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <label style="color:lightyellow"> &nbsp;&nbsp; (Rs. 45/- per pc.) &nbsp;&nbsp; </label>
+            <br><br>
+            <label for="sn5"><b>Bedmi Puri: </b></label>
+            <select name="sn5" id="sn5">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <label style="color:lightyellow"> &nbsp;&nbsp; (Rs. 39/- per pc.) &nbsp;&nbsp; </label>
+            <br><br>
+            <label for="sn6"><b>Malai Kofta: </b></label>
+            <select name="sn6" id="sn6">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <label style="color:lightyellow"> &nbsp;&nbsp; (Rs. 179/- per plate) &nbsp;&nbsp; </label>
+            <br><br>
+            <label for="sn7"><b>Tawa Roti: </b></label>
+            <select name="sn7" id="sn7">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <label style="color:lightyellow"> &nbsp;&nbsp; (Rs. 19/- per pc.) &nbsp;&nbsp; </label>
+            <br><br>
+            <label for="sn8"><b>Mangodi Ki Sabji: </b></label>
+            <select name="sn8" id="sn8">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <label style="color:lightyellow"> &nbsp;&nbsp; (Rs. 155/- per plate) &nbsp;&nbsp; </label>
+            <br><br>
+            <h4><button class="button" type="submit">Order</button></h4>
+        </form>
+          
+      </body>
+      </html>

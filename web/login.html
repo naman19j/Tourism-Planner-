@@ -1,0 +1,43 @@
+<html>
+    <title>Login Page</title>
+<style>
+    h4 {
+  text-align: center;
+    }
+    .button {
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 1px;
+      cursor: pointer;
+    }
+    .button {background-color: black} 
+</style>
+<body style="background-image: url(projectback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; text-align:center">
+    <h2 style="text-align: center;background-color: springgreen;">Login Credentials</h2><br><br>
+<h4>
+    <form name="loginForm" action="loginservlet" method="POST" onsubmit="return validateForm()">  
+            <label for="ID">Username : </label>   
+            <input type="text" id="ID" name="ID">  
+            <br><br>
+            <label for="password">Password : </label>   
+            <input type="password" id="password" name="password">
+            <br><br><br>
+            <button class="button" type="submit" >Login</button>     
+            <button type="reset" class="button">Reset</button>    
+    </form> 
+    <br><br>
+    <b><u>Not signed Up ?</u></b><Br><br>
+    Register By clicking Register Link.
+    <a href="signup.html" target="mid" >Register</a>
+</h4>
+</body>
+<script src="loginvalidation.js"></script>
+</html>

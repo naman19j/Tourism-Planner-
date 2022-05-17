@@ -1,0 +1,40 @@
+<html>
+    <title>SignUp Page</title>
+<style>
+    h4 {
+  text-align: center;
+    }
+    .button {
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 1px;
+      cursor: pointer;
+    }
+    .button {background-color: black} 
+</style>
+<body style="background-image: url(projectback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; text-align:center">
+<h1 style="text-align: center; background-color: springgreen;">Registration Page</h1>
+<h3 style="text-align: center"><u>Enter Details</u></h3><br>
+<h4>
+<form name="signup" action="signupservlet" method="POST" onsubmit="return Validate()">
+   First Name : <br><input type="text" id="fname" name="fname"><br><br>
+   Last Name : <br><input type="text" id="lname" name="lname"><br><br>
+    Email : <br><input type="text" id="email" name="email"><br><br>
+    Phone : <br><input type="text" id="phone" name="phone"><br><br>
+    Username : <br><input type="text" id="uname" name="uname"><br><br>
+    Password : <br><input type="password" id="pass" name="pass"><br><br>
+    Re Enter : <br><input type="password" id="rpass" name="rpass"><br><br><br>
+    <button class="button" type="submit">Register</button>
+</form>
+</body>
+<script src="signupvalidation.js"></script>
+</h4>
+</html>

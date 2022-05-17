@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+        <title>Beauty of Amber Fort</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.button {
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 1px;
+      cursor: pointer;
+    }
+    .button {background-color: black} 
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  max-width: 55%;
+  display: inline-table;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body style="background-image: url(projectback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;   
+  background-attachment: fixed;">
+
+<div class="topnav">
+    <a class="active" href="profilePage.html">Profile</a>
+    <div class="topnav-right">
+        <a href="amberAPI.html">See Location</a>
+      <a href="Homepage.html">LogOut</a>
+    </div>
+  </div>
+        <link rel="stylesheet" href="styleProjects.css">
+<h2 class="glow" style="text-align:center">AMBER FORT</h2>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Amber_Fort_%28%E0%A4%86%E0%A4%AE%E0%A5%87%E0%A4%B0_%E0%A4%95%E0%A4%BE_%E0%A4%95%E0%A4%BF%E0%A4%B2%E0%A4%BE_%29.jpg/1200px-Amber_Fort_%28%E0%A4%86%E0%A4%AE%E0%A5%87%E0%A4%B0_%E0%A4%95%E0%A4%BE_%E0%A4%95%E0%A4%BF%E0%A4%B2%E0%A4%BE_%29.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="https://images-production.gardenvisit.com/uploads/images/114824/amber_palace_jaipur2_original.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="https://www.india.com/wp-content/uploads/2018/08/Amer-Fort-photo-1.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="https://jaipurtourism.co.in/images/places-to-visit/header/amber-amer-fort-jaipur-tourism-entry-fee-timings-holidays-reviews-header.jpg" style="width:100%">
+  </div>
+
+    
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Amber_Fort_%28%E0%A4%86%E0%A4%AE%E0%A5%87%E0%A4%B0_%E0%A4%95%E0%A4%BE_%E0%A4%95%E0%A4%BF%E0%A4%B2%E0%A4%BE_%29.jpg/1200px-Amber_Fort_%28%E0%A4%86%E0%A4%AE%E0%A5%87%E0%A4%B0_%E0%A4%95%E0%A4%BE_%E0%A4%95%E0%A4%BF%E0%A4%B2%E0%A4%BE_%29.jpg" style="width:100%" onclick="currentSlide(1)" alt="Amber Fort">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://images-production.gardenvisit.com/uploads/images/114824/amber_palace_jaipur2_original.jpg" style="width:100%" onclick="currentSlide(2)" alt="Aerial View">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.india.com/wp-content/uploads/2018/08/Amer-Fort-photo-1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Elephant Ride">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://jaipurtourism.co.in/images/places-to-visit/header/amber-amer-fort-jaipur-tourism-entry-fee-timings-holidays-reviews-header.jpg" style="width:100%" onclick="currentSlide(4)" alt="Water Reflection">
+    </div>
+  </div>
+</div>
+
+<h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; background-color: transparent;">One of the top tourist attractions of Jaipur, the huge Amer Palace Fort sits atop a small hill, and is located at a distance about 11 km from the main city. The magnificent Amer Fort is an extensive palace complex that has been built with pale yellow and pink sandstone, and with white marble. The fort is divided into four main sections that are graced with their own courtyards.</h3>
+
+<br><h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; background-color: transparent;">As you arrive at the Amer Fort, you will enter through the Suraj Pol; unless you arrive by car, then you enter via the Chand Pol. Both these gates open into the Jaleb Chowk, which is the main courtyard, where in earlier times, returning armies used to display their plunder to the people. The fort has a number of sections, including the King's quarters, the zenana (where the women lived), gardens, temples, etc.</h3>
+    
+<br><h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; background-color:transparent;">There are a lot of attractions for one to see at the Amer Fort, including the diwan-e-aam, such mandir, and the Sheesh Mahal. Amer Fort is also home to some underground tunnels that connect Amer to Jaigarh Fort. A part of these tunnels has been restored, and is now open to public as well. Encompassing all this, the Amer Fort is a perfect example of Rajasthani architecture which is a must-visit.</h3>
+
+<br><h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; background-color:transparent;">The essence of Amer Fort is encapsulated by the beautiful light and sound show within the fort, where visitors get to see an astounding spectacle about the history of the fort.</h3>
+<br><br>
+<h4 style="text-align: center;">
+<form action="AMBERhotels.html">
+<button class="button" type="submit" >Hotels Nearby</button>   
+</form>  
+<form action="AMBERres.html">
+<button type="submit" class="button">Restaurant Nearby</button>    
+</form>
+</h4>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>

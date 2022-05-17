@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid white   ;
+  perspective: 1000px;
+  display: inline-table; 
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: orange;
+  color: white;
+  transform: rotateY(180deg);
+}
+.button {
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 1px;
+      cursor: pointer;
+    }
+    .button {background-color: rgba(0, 0, 0, 0.596)} 
+</style>
+</head>
+<body style="background-image: url(projectback.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Times New Roman';
+background-attachment: fixed; text-align:center;align-content: center; align-items: center;">
+
+<h1 style="color: #f1f1f1; background-color: black;">HOTELS</h1>
+<h3>Nearby Amer Fort</h3><br><br>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <img src="https://r1imghtlak.mmtcdn.com/28a9c3d0edf511ebb38e0a58a9feac02.jpg?&output-quality=75&downsize=910:612&output-format=jpg" style="width:300px;height:200px;"/>
+        <h2 style="color:#f1f1f1; background-color: black;">Surya <br>Haveli</h2>
+    </div>
+    <div class="flip-box-back">
+        <br><br>
+      <h4 style="color: black;">Near Amer Fort, Jaipur | 13.9 km from city centre</h4>
+      <form action="hotel1.html">
+          <button type="submit" class="button">Order : </button>
+      </form>
+    </div>
+  </div>
+</div>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+          <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201810221730109714-5c945ba633c311ec90d90a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,3&output-format=jpg"style="width:300px;height:200px;"/>
+          <h2 style="color:#f1f1f1; background-color: black;">The<br>Amer Valley</h2>
+      </div>
+      <div class="flip-box-back">
+          <br><br>
+        <h4 style="color: black;">Amer, Jaipur | 1.1 km from Jal Mahal</h4>
+        <form action="hotel2.html">
+            <button type="submit" class="button">Order : </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+<div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+          <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/20070124102602996-blu28af7g15bpcgtalu5jqmm001s.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg" style="width:300px;height:200px;"/>
+          <h2 style="color:#f1f1f1; background-color: black;">KK Royal Hotel<br> & Convention Centre</h2>
+      </div>
+      <div class="flip-box-back">
+          <br><br>
+        <h4 style="color: black;"> Amer, Jaipur | 14.9 km from city centre </h4>
+        <form action="hotel3.html">
+            <button type="submit" class="button">Order : </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+            <img src="https://r1imghtlak.mmtcdn.com/71175e046ec711e78c5b0a4cef95d023.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg"style="width:300px;height:200px;"/>
+            <h2 style="color:#f1f1f1; background-color: black;">La Premier<br>Spa Resort</h2>
+        </div>
+        <div class="flip-box-back">
+            <br><br>
+          <h4 style="color: black;">Amer, Jaipur | 13.9 km from city centre</h4>
+          <form action="hotel4.html">
+              <button type="submit" class="button">Order : </button>
+          </form>
+        </div>
+      </div>
+    </div>
+<br><br>
+</body>
+</html>

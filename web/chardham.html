@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <title>Beauty Of Char Dham</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.button {
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 1px;
+      cursor: pointer;
+    }
+    .button {background-color: black} 
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  max-width: 55%;
+  display: inline-table;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body style="background-image: url(projectback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;   
+  background-attachment: fixed;">
+
+<div class="topnav">
+        <a class="active" href="profilePage.html">Profile</a>
+     <div class="topnav-right">
+         <a href="chardhamAPI.html">See Location</a>
+      <a href="Homepage.html">LogOut</a>
+    </div>
+  </div>
+
+     <link rel="stylesheet" href="styleProjects.css">
+<h2 class="glow" style="text-align:center">CharDham Yatra</h2>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="https://roshanpanjiyara.com/wp-content/uploads/2019/11/Chardham-Yatra-Guide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="https://thetravelshots.com/wp-content/uploads/2020/10/yamunotri-1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="https://i.pinimg.com/originals/a8/45/28/a845284a202aef8f53f33648d05b5939.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="https://akm-img-a-in.tosshub.com/aajtak/images/photo_gallery/202102/kedarnath_getty_5_0.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="https://gumlet.assettype.com/swarajya/2018-11/5bdfd842-4d8c-4476-9ab5-6747e5dc8761/1200px_____Sri_Badrinath__7756773956_.jpg?w=1200&h=800" style="width:100%">
+  </div>
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://roshanpanjiyara.com/wp-content/uploads/2019/11/Chardham-Yatra-Guide.jpg" style="width:100%" onclick="currentSlide(1)" alt="CharDham Yatra">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://thetravelshots.com/wp-content/uploads/2020/10/yamunotri-1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Yamunotri">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.pinimg.com/originals/a8/45/28/a845284a202aef8f53f33648d05b5939.jpg" style="width:100%" onclick="currentSlide(3)" alt="Gangotri">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://akm-img-a-in.tosshub.com/aajtak/images/photo_gallery/202102/kedarnath_getty_5_0.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kedarnath">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://gumlet.assettype.com/swarajya/2018-11/5bdfd842-4d8c-4476-9ab5-6747e5dc8761/1200px_____Sri_Badrinath__7756773956_.jpg?w=1200&h=800" style="width:100%" onclick="currentSlide(5)" alt="Badrinath">
+    </div>    
+  </div>
+</div>
+
+<h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; background-color: transparent;">Yamunotri is dedicated to the Goddess Yamuna who goes along the pilgrims to the high altitudes of the picturesque Rawai Valley. It is believed that a bath in the waters of the Yamuna protects the devotee from untimely death.</h3>
+
+<br><h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; background-color: transparent;"> Gangotri is dedicated to the Goddess Ganga. The shrine overlooks the River Bhagirathi, another name of River Ganga – the name having been derived from the myth of the ancient King Bhagirath’s penance that succeeded in bringing her upon the earth from the heaven. </h3>
+    
+<br><h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; background-color:transparent;"> Kedarnath is dedicated to Lord Shiva and is also a part of the Panch Kedar. It is the northernmost Jyotirlinga and is close to the source of the holy River Mandakini. Badrinath is dedicated to Lord Vishnu. It is situated on the bank of the River Alaknanda. According to legend, Lord Vishnu meditated here while his consort Lakshmi took the form of a berry (Badri) tree to offer him shade.</h3>
+
+<br><h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; background-color:transparent;">Badrinath is located at an elevation of around 3,100 m. Located in the Garhwal Himalayas, on the banks of the Alaknanda river, this sacred town lies between Nar and Narayana mountain ranges. The temple is believed to have been established by sage Adi Shankaracharya in the 8th century. With Lord Vishnu as its presiding deity, the temple remains open for six months in a year. In winter it becomes inaccessible due to heavy snowfall.</h3>
+<br><br><h4 style="text-align:center">
+<form action="CHARDHAMhotels.html">
+<button class="button" type="submit" >Hotels Nearby</button>   
+</form>  
+<form action="CHARDHAMres.html">
+<button type="submit" class="button">Restaurant Nearby</button>    
+</form></h4>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
